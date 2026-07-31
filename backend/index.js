@@ -1,3 +1,8 @@
+require("dotenv").config();
+
+const dns = require("dns");
+dns.setServers(["8.8.8.8", "1.1.1.1"]);
+
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -21,6 +26,7 @@ const reportRoute = require("./routes/reports");
 const razorpayRoute = require("./routes/razorpay");
 
 // --- MONGODB CONNECTION ---
+console.log("ENV CHECK:", process.env.MONGO_URI);
 mongoose
   .connect(process.env.MONGO_URI, {
     useNewUrlParser: true,

@@ -233,7 +233,7 @@ function ContactUs() {
                         <div className="infoContainer">
                             <div className="infoGroup">
                                 <img src="https://img.icons8.com/ios-filled/50/000000/mail.png" alt="email icon" className="infoIcon" />
-                                <span className="infoText">rahulrajput77666@gmail.com</span>
+                                <span className="infoText">jashpal900@gmail.com.com</span>
                             </div>
                             <div className="infoGroup">
                                 <img src="https://img.icons8.com/ios-filled/50/000000/marker.png" alt="address icon" className="infoIcon" />
@@ -241,7 +241,7 @@ function ContactUs() {
                             </div>
                             <div className="infoGroup">
                                 <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="phone icon" className="infoIcon" />
-                                <span className="infoText">+91 9644922096</span>
+                                <span className="infoText">+91 8435860848</span>
                             </div>
                         </div>
                     </div>

@@ -37,7 +37,7 @@ function Home() {
             try {
                 const user = JSON.parse(userString);
                 setIsLoggedIn(true);
-                if (user.email === "rahulrajput77666@gmail.com") {
+                if (user.email === "jashpal900@gmail.com") {
                     setIsAdmin(true);
                 }
             } catch (err) {
@@ -215,10 +215,10 @@ function Home() {
                     <div className={styles.footerColumn}>
                         <h3 className={styles.footerHeader}>Get in Touch</h3>
                         <p className={styles.footerText}>
-                            <i className="fas fa-phone"></i> +91 9644922096
+                            <i className="fas fa-phone"></i> +91 8435860848
                         </p>
                         <p className={styles.footerText}>
-                            <i className="fas fa-envelope"></i> rahulrajput77666@gmail.com
+                            <i className="fas fa-envelope"></i> jashpal900@gmail.com
                         </p>
                     </div>
                     <div className={styles.footerColumn}>
@@ -227,7 +227,7 @@ function Home() {
                             <a href="https://www.facebook.com/profile.php?id=100047588586819" className={styles.socialLink} target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-facebook-f"></i>
                             </a>
-                            <a href="https://www.instagram.com/rahulrajput.4u/?hl=en" className={styles.socialLink} target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.instagram.com/jaspal_rajput_8435/?hl=en" className={styles.socialLink} target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-instagram"></i>
                             </a>
                             <a href="https://twitter.com" className={styles.socialLink} target="_blank" rel="noopener noreferrer">
