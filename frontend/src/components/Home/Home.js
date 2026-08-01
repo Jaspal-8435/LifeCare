@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import styles from "./styles.module.css";
 import axios from "axios";
-const API_BASE = process.env.REACT_APP_API_URL || (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' ? 'http://localhost:5000' : window.location.origin);
+const API_BASE = process.env.REACT_APP_API_URL || 
+'https://lifecare-backend-btgd.onrender.com';
 
 // A sub-component to render star icons based on a rating.
 const StarRating = ({ rating }) => {
