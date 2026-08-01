@@ -56,22 +56,37 @@ function BookAppointment() {
     }
   }, [navigate]);
 
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const [testsRes, profilesRes] = await Promise.all([
-          axios.get(`${API_BASE}/api/tests/`),
-          axios.get(`${API_BASE}/api/profiles/`),
-        ]);
-        setTests(testsRes.data || []);
-        setProfiles(profilesRes.data || []);
-      } catch (err) {
-        console.error(err);
-        setFetchError("Failed to fetch tests/profiles.");
-      }
+ useEffect(() => {
+  async function fetchData() {
+    try {
+      const [testsRes, profilesRes] = await Promise.all([
+        axios.get(`${API_BASE}/api/tests/`),
+        axios.get(`${API_BASE}/api/profiles/`),
+      ]);
+
+      console.log("TEST DATA:", testsRes.data);
+      console.log("PROFILE DATA:", profilesRes.data);
+
+      setTests(
+        Array.isArray(testsRes.data)
+          ? testsRes.data
+          : testsRes.data.tests || testsRes.data.data || []
+      );
+
+      setProfiles(
+        Array.isArray(profilesRes.data)
+          ? profilesRes.data
+          : profilesRes.data.profiles || profilesRes.data.data || []
+      );
+
+    } catch (err) {
+      console.error(err);
+      setFetchError("Failed to fetch tests/profiles.");
     }
-    fetchData();
-  }, []);
+  }
+
+  fetchData();
+}, []);
 
   useEffect(() => {
     if (location.state?.selectedProfile)
