@@ -224,10 +224,10 @@ function Home() {
                     <div className={styles.footerColumn}>
                         <h3 className={styles.footerHeader}>Follow Us</h3>
                         <div className={styles.socialIcons}>
-                            <a href="https://www.facebook.com/profile.php?id=100047588586819" className={styles.socialLink} target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.facebook.com/share/19E9epYaRL/" className={styles.socialLink} target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-facebook-f"></i>
                             </a>
-                            <a href="https://www.instagram.com/jaspal_rajput_8435/?hl=en" className={styles.socialLink} target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.instagram.com/jaspal_rajput_8435?igsh=M2R6N2R2amxjem5i" className={styles.socialLink} target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-instagram"></i>
                             </a>
                             <a href="https://twitter.com" className={styles.socialLink} target="_blank" rel="noopener noreferrer">
